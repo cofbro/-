@@ -1,0 +1,262 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+        <variable
+            name="cardClick"
+            type="com.example.happygame.MainViewModel" />
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        tools:context=".MainActivity">
+
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:scaleType="fitXY"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:srcCompat="@drawable/xiaobg" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:paddingStart="12dp"
+            android:paddingRight="12dp"
+            app:layout_constraintDimensionRatio="w,1:1"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="@+id/imageView4"
+            app:layout_constraintTop_toTopOf="@+id/guideline3">
+
+            <ImageView
+                android:id="@+id/iv21"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="12dp"
+                android:scaleType="fitXY"
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv22"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv11"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv11"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:scaleType="fitXY"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv12"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv12"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:scaleType="fitXY"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv13"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv11"
+                app:layout_constraintTop_toTopOf="@+id/iv11"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv13"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:scaleType="fitXY"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv14"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv12"
+                app:layout_constraintTop_toTopOf="@+id/iv12"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv14"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                android:scaleType="fitXY"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv13"
+                app:layout_constraintTop_toTopOf="@+id/iv13"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv22"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv23"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv21"
+                app:layout_constraintTop_toTopOf="@+id/iv21"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv23"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv24"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv22"
+                app:layout_constraintTop_toTopOf="@+id/iv22"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv24"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv23"
+                app:layout_constraintTop_toTopOf="@+id/iv23"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv31"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="8dp"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv32"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv21"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv33"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv34"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv32"
+                app:layout_constraintTop_toTopOf="@+id/iv32"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv34"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv33"
+                app:layout_constraintTop_toTopOf="@+id/iv33"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv32"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv33"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv31"
+                app:layout_constraintTop_toTopOf="@+id/iv31"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv41"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv42"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/iv31"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv42"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv43"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv41"
+                app:layout_constraintTop_toTopOf="@+id/iv41"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv43"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toStartOf="@+id/iv44"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv42"
+                app:layout_constraintTop_toTopOf="@+id/iv42"
+                app:srcCompat="@drawable/icbg" />
+
+            <ImageView
+                android:onClick="@{(view) -> cardClick.cardClicked(view)}"
+                android:id="@+id/iv44"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginStart="10dp"
+                app:layout_constraintDimensionRatio="w,1:1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/iv43"
+                app:layout_constraintTop_toTopOf="@+id/iv43"
+                app:srcCompat="@drawable/icbg" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/guideline3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
